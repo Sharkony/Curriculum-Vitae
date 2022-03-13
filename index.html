@@ -4,9 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600&display=swap" rel="stylesheet">
+    <link href="/assets/images/favicon.ico" rel="icon">
     <title>Curriculum Vitae</title>
 </head>
+
 <body>
+    <div class="wrapper">
+
+        <header>   
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#History">History</a></li>
+                        <li><a href="#Code">Code</a></li>
+                        <li><a href="#Contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="theme">
+                <button class="dark-theme" data-theme-dark='true'></button>
+            </div>
+
+            <div class="language"> 
+                <input type="radio" name="rdo" id="en" checked>
+                <label for="en">en</label>
+
+                <input type="radio" name="rdo" id="ru">
+                <label for="ru">ru</label>
+            </div>
+
+             <div class="menu">
+                <div class="burger_menu"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <div class="profile">
+                    <img src="/assets/images/wisp.jpg" alt="avatar">
+                    <div class="name">
+                        <h1>Alexey Sukmanov</h1>
+                    </div>
+
+                </div>
+
+                <section class="aboutMe-section" id="AboutMe">
+                    <h2>About Me</h2>
+                    <div class="section-text" >
+                        <p>Experienced in negotiating with clients about technical requirements and work schedule.</p>
+                        <p>Capable of finding solution to unexpected problems in short terms.</p> 
+                        <p>Highly motivated, responsible and eager to learn.</p> 
+                        <p>English level - B1 (Intermediate English)</p>
+                    </div>
+                </section>
+
+                <section class="skills-section" id="Skills">
+                    <h2>Hard skills</h2>
+                    <div class="section-text" >
+                        <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>
+                        <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+                        <a href="https://en.wikipedia.org/wiki/Git">Git</a> 
+                        <a href="https://en.wikipedia.org/wiki/AutoCAD">AutoCAD</a>
+                    </div>
+                </section>
+
+                <section class="education-section" id="Education">
+                    <h2>Education</h2>
+                    <div class="section-text">
+                        <p>2009-2014:</p>
+                        <p>Belarusian State University of Informatics and Radioelectronics</p>
+                        <p>Faculty of Computer-aided Design</p>
+                        <p>Electromechanical engineer specialty</p>
+                    </div>
+                </section>
+
+                <section class="history-section" id="History">
+                    <h2>Employment history</h2>
+                    <div class="section-text">
+                        <p> August 2014 – Present: </p>
+                        <p> «Институт «Минскгражданпроект», Minsk, Kollektornaya st., bldg. 20a. </p>
+                        <p>Started at august 2014 as 2 class engineer in security systems. </p>
+                        <p>In 2017 was promoted to 1 class engineer. </p>
+                        <p>In 2020 became Head of group of fire and security alarm systems.</p>
+                    </div>
+                </section>
+
+                <section class="code-section" id="Code">
+                    <h2>Code example</h2>
+                    
+                        <pre>
+                            <code>
+function rgbToHex(r, g, b) {
+  
+    function roundRgbComp(rgbComp){
+        return (rgbComp < 0) ? 0 : (rgbComp > 255) ? 255 : rgbComp;
+        }
+                                    
+    function convertComp(roundComp) {
+        let hexComp = roundComp.toString(16);
+        return hexComp.length == 1 ? "0" + hexComp : hexComp;
+        }
+                                        
+    return convertComp(roundRgbComp(r)).toUpperCase() + 
+        convertComp(roundRgbComp(g)).toUpperCase() + 
+        convertComp(roundRgbComp(b)).toUpperCase()
+        }
+                            </code>
+                        </pre>
+                   
+                </section>
+
+                <section class="contacts-section" id="Contacts">
+                    <h2>Contacts</h2>
+                    <div class="section-text">
+                        <p>Minsk, Belarus </p>
+                        <p>Phone: +375292600272 </p>
+                        <p>Email: alexeysharkony@gmail.com </p>
+                    </div>
+                </section>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+
+            <div class="footer-container">
+                    <div>&#169; 2022</div> 
+                    <div class="RSS-text">
+                        <a href="https://rs.school/js/">Rolling Scopes School</a>
+                    </div>
+                    <a href="https://github.com/sharkony">
+                        <svg class="icon">
+                            <use xlink:href="sprite.svg#github"></use>
+                        </svg>
+                    </a>
+            </div>
+
+        </footer>
+    </div>
     
+    <script src="index.js"></script>
 </body>
 </html>
