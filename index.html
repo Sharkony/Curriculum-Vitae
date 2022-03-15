@@ -16,18 +16,18 @@
         <header>   
             <div class="navigation">
                 <nav>
-                    <ul>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#Education">Education</a></li>
-                        <li><a href="#History">History</a></li>
-                        <li><a href="#Code">Code</a></li>
-                        <li><a href="#Contacts">Contacts</a></li>
+                    <ul class="primary-navigation">
+                        <li><a class="navigation_item" href="#Skills">Skills</a></li>
+                        <li><a class="navigation_item" href="#Education">Education</a></li>
+                        <li><a class="navigation_item" href="#History">History</a></li>
+                        <li><a class="navigation_item" href="#Code">Code</a></li>
+                        <li><a class="navigation_item" href="#Contacts">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
             
             <div class="theme">
-                <button class="dark-theme" data-theme-dark='true'></button>
+                <button class="dark-theme"></button>
             </div>
 
             <div class="language"> 
@@ -100,21 +100,21 @@
                     
                         <pre>
                             <code>
-function rgbToHex(r, g, b) {
-  
-    function roundRgbComp(rgbComp){
-        return (rgbComp < 0) ? 0 : (rgbComp > 255) ? 255 : rgbComp;
-        }
-                                    
-    function convertComp(roundComp) {
-        let hexComp = roundComp.toString(16);
-        return hexComp.length == 1 ? "0" + hexComp : hexComp;
-        }
-                                        
-    return convertComp(roundRgbComp(r)).toUpperCase() + 
-        convertComp(roundRgbComp(g)).toUpperCase() + 
-        convertComp(roundRgbComp(b)).toUpperCase()
-        }
+        function rgbToHex(r, g, b) {
+        
+            function roundRgbComp(rgbComp){
+                return (rgbComp < 0) ? 0 : (rgbComp > 255) ? 255 : rgbComp;
+                }
+                                            
+            function convertComp(roundComp) {
+                let hexComp = roundComp.toString(16);
+                return hexComp.length == 1 ? "0" + hexComp : hexComp;
+                }
+                                                
+            return convertComp(roundRgbComp(r)).toUpperCase() + 
+                convertComp(roundRgbComp(g)).toUpperCase() + 
+                convertComp(roundRgbComp(b)).toUpperCase()
+                }
                             </code>
                         </pre>
                    
