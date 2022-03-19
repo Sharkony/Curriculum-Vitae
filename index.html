@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600&display=swap" rel="stylesheet">
+    <link href="/assets/images/favicon.ico" rel="icon">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body data-themeColor="dark">
+    <div class="wrapper">
+
+        <header>   
+            <div class="navigation">
+                <nav>
+                    <ul class="primary-navigation">
+                        <li><a class="navigation_item" href="#Skills" data-i18="nav1">Skills</a></li>
+                        <li><a class="navigation_item" href="#Education" data-i18="nav2">Education</a></li>
+                        <li><a class="navigation_item" href="#History" data-i18="nav3">History</a></li>
+                        <li><a class="navigation_item" href="#Code" data-i18="nav4">Code</a></li>
+                        <li><a class="navigation_item" href="#Contacts" data-i18="nav5">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="theme">
+                <button class="theme-btn" data-themeColor="dark"></button>
+            </div>
+
+            <div class="language"> 
+                <input type="radio" name="rdo" id="en" checked>
+                <label for="en">en</label>
+
+                <input type="radio" name="rdo" id="ru">
+                <label for="ru">ru</label>
+            </div>
+
+             <div class="menu">
+                <div class="burger_menu"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <div class="profile">
+                    <img src="/assets/images/wisp.jpg" alt="avatar">
+                    <div class="name">
+                        <h1 data-i18="name">Alexey Sukmanov</h1>
+                    </div>
+
+                </div>
+
+                <section class="aboutMe-section" id="AboutMe">
+                    <h2 data-i18="aboutMe">About Me</h2>
+                    <div class="section-text" >
+                        <p data-i18="aboutMe1">Experienced in negotiating with clients about technical requirements and work schedule.</p>
+                        <p data-i18="aboutMe2">Capable of finding solution to unexpected problems in short terms.</p> 
+                        <p data-i18="aboutMe3">Highly motivated, responsible and eager to learn.</p> 
+                        <p data-i18="aboutMe4">English level - B1 (Intermediate English)</p>
+                    </div>
+                </section>
+
+                <section class="skills-section" id="Skills">
+                    <h2 data-i18="skills">Hard skills</h2>
+                    <div class="section-text" >
+                        <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>
+                        <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+                        <a href="https://en.wikipedia.org/wiki/Git">Git</a> 
+                        <a href="https://en.wikipedia.org/wiki/AutoCAD">AutoCAD</a>
+                    </div>
+                </section>
+
+                <section class="education-section" id="Education">
+                    <h2 data-i18="education">Education</h2>
+                    <div class="section-text">
+                        <p>2009-2014:</p>
+                        <p data-i18="education2">Belarusian State University of Informatics and Radioelectronics</p>
+                        <p data-i18="education3">Faculty of Computer-aided Design</p>
+                        <p data-i18="education4">Electromechanical engineer specialty</p>
+                    </div>
+                </section>
+
+                <section class="history-section" id="History">
+                    <h2 data-i18="history">Employment history</h2>
+                    <div class="section-text">
+                        <p data-i18="history1"> August 2014 – Present: </p>
+                        <p data-i18="history2"> «Институт «Минскгражданпроект», Minsk, Kollektornaya st., bldg. 20a. </p>
+                        <p data-i18="history3">Started at august 2014 as 2 class engineer in security systems. </p>
+                        <p data-i18="history4">In 2017 was promoted to 1 class engineer. </p>
+                        <p data-i18="history5">In 2020 became Head of group of fire and security alarm systems.</p>
+                    </div>
+                </section>
+
+                <section class="code-section" id="Code">
+                    <h2 data-i18="code">Code example</h2>
+                    
+                        <pre>
+                            <code>
+        function rgbToHex(r, g, b) {
+        
+            function roundRgbComp(rgbComp){
+                return (rgbComp < 0) ? 0 : (rgbComp > 255) ? 255 : rgbComp;
+                }
+                                            
+            function convertComp(roundComp) {
+                let hexComp = roundComp.toString(16);
+                return hexComp.length == 1 ? "0" + hexComp : hexComp;
+                }
+                                                
+            return convertComp(roundRgbComp(r)).toUpperCase() + 
+                convertComp(roundRgbComp(g)).toUpperCase() + 
+                convertComp(roundRgbComp(b)).toUpperCase()
+                }
+                            </code>
+                        </pre>
+                   
+                </section>
+
+                <section class="contacts-section" id="Contacts">
+                    <h2 data-i18="contacts">Contacts</h2>
+                    <div class="section-text">
+                        <p data-i18="contacts1">Minsk, Belarus </p>
+                        <p data-i18="contacts2">Phone: +375292600272 </p>
+                        <p data-i18="contacts3">Email: alexeysharkony@gmail.com </p>
+                    </div>
+                </section>
+
+            </div>
+
+
+        </main>
+
+        <footer>
+
+            <div class="footer-container">
+                    <div>&#169; 2022</div> 
+                    <div class="RSS-text">
+                        <a href="https://rs.school/js/">Rolling Scopes School</a>
+                    </div>
+                    <a href="https://github.com/sharkony">
+                        <svg class="icon">
+                            <use xlink:href="sprite.svg#github"></use>
+                        </svg>
+                    </a>
+            </div>
+
+        </footer>
+    </div>
+    
+    <script type="module" src="index.js"></script>
+</body>
+</html>
