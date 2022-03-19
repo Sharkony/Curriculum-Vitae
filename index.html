@@ -10,24 +10,24 @@
     <title>Curriculum Vitae</title>
 </head>
 
-<body>
+<body data-themeColor="dark">
     <div class="wrapper">
 
         <header>   
             <div class="navigation">
                 <nav>
                     <ul class="primary-navigation">
-                        <li><a class="navigation_item" href="#Skills">Skills</a></li>
-                        <li><a class="navigation_item" href="#Education">Education</a></li>
-                        <li><a class="navigation_item" href="#History">History</a></li>
-                        <li><a class="navigation_item" href="#Code">Code</a></li>
-                        <li><a class="navigation_item" href="#Contacts">Contacts</a></li>
+                        <li><a class="navigation_item" href="#Skills" data-i18="nav1">Skills</a></li>
+                        <li><a class="navigation_item" href="#Education" data-i18="nav2">Education</a></li>
+                        <li><a class="navigation_item" href="#History" data-i18="nav3">History</a></li>
+                        <li><a class="navigation_item" href="#Code" data-i18="nav4">Code</a></li>
+                        <li><a class="navigation_item" href="#Contacts" data-i18="nav5">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
             
             <div class="theme">
-                <button class="dark-theme"></button>
+                <button class="theme-btn" data-themeColor="dark"></button>
             </div>
 
             <div class="language"> 
@@ -48,23 +48,23 @@
                 <div class="profile">
                     <img src="/assets/images/wisp.jpg" alt="avatar">
                     <div class="name">
-                        <h1>Alexey Sukmanov</h1>
+                        <h1 data-i18="name">Alexey Sukmanov</h1>
                     </div>
 
                 </div>
 
                 <section class="aboutMe-section" id="AboutMe">
-                    <h2>About Me</h2>
+                    <h2 data-i18="aboutMe">About Me</h2>
                     <div class="section-text" >
-                        <p>Experienced in negotiating with clients about technical requirements and work schedule.</p>
-                        <p>Capable of finding solution to unexpected problems in short terms.</p> 
-                        <p>Highly motivated, responsible and eager to learn.</p> 
-                        <p>English level - B1 (Intermediate English)</p>
+                        <p data-i18="aboutMe1">Experienced in negotiating with clients about technical requirements and work schedule.</p>
+                        <p data-i18="aboutMe2">Capable of finding solution to unexpected problems in short terms.</p> 
+                        <p data-i18="aboutMe3">Highly motivated, responsible and eager to learn.</p> 
+                        <p data-i18="aboutMe4">English level - B1 (Intermediate English)</p>
                     </div>
                 </section>
 
                 <section class="skills-section" id="Skills">
-                    <h2>Hard skills</h2>
+                    <h2 data-i18="skills">Hard skills</h2>
                     <div class="section-text" >
                         <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>
                         <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>
@@ -75,28 +75,28 @@
                 </section>
 
                 <section class="education-section" id="Education">
-                    <h2>Education</h2>
+                    <h2 data-i18="education">Education</h2>
                     <div class="section-text">
                         <p>2009-2014:</p>
-                        <p>Belarusian State University of Informatics and Radioelectronics</p>
-                        <p>Faculty of Computer-aided Design</p>
-                        <p>Electromechanical engineer specialty</p>
+                        <p data-i18="education2">Belarusian State University of Informatics and Radioelectronics</p>
+                        <p data-i18="education3">Faculty of Computer-aided Design</p>
+                        <p data-i18="education4">Electromechanical engineer specialty</p>
                     </div>
                 </section>
 
                 <section class="history-section" id="History">
-                    <h2>Employment history</h2>
+                    <h2 data-i18="history">Employment history</h2>
                     <div class="section-text">
-                        <p> August 2014 – Present: </p>
-                        <p> «Институт «Минскгражданпроект», Minsk, Kollektornaya st., bldg. 20a. </p>
-                        <p>Started at august 2014 as 2 class engineer in security systems. </p>
-                        <p>In 2017 was promoted to 1 class engineer. </p>
-                        <p>In 2020 became Head of group of fire and security alarm systems.</p>
+                        <p data-i18="history1"> August 2014 – Present: </p>
+                        <p data-i18="history2"> «Институт «Минскгражданпроект», Minsk, Kollektornaya st., bldg. 20a. </p>
+                        <p data-i18="history3">Started at august 2014 as 2 class engineer in security systems. </p>
+                        <p data-i18="history4">In 2017 was promoted to 1 class engineer. </p>
+                        <p data-i18="history5">In 2020 became Head of group of fire and security alarm systems.</p>
                     </div>
                 </section>
 
                 <section class="code-section" id="Code">
-                    <h2>Code example</h2>
+                    <h2 data-i18="code">Code example</h2>
                     
                         <pre>
                             <code>
@@ -121,11 +121,11 @@
                 </section>
 
                 <section class="contacts-section" id="Contacts">
-                    <h2>Contacts</h2>
+                    <h2 data-i18="contacts">Contacts</h2>
                     <div class="section-text">
-                        <p>Minsk, Belarus </p>
-                        <p>Phone: +375292600272 </p>
-                        <p>Email: alexeysharkony@gmail.com </p>
+                        <p data-i18="contacts1">Minsk, Belarus </p>
+                        <p data-i18="contacts2">Phone: +375292600272 </p>
+                        <p data-i18="contacts3">Email: alexeysharkony@gmail.com </p>
                     </div>
                 </section>
 
@@ -151,6 +151,6 @@
         </footer>
     </div>
     
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>

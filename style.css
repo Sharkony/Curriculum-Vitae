@@ -2,14 +2,20 @@ html {
     scroll-behavior: smooth; 
   }
 
-:root {
+body[data-themeColor="dark"]{
     --color-gold: #bdae82;
     --font-bold: 600;
     --color-text: #ffffff; 
-    --color-background: #000000; 
+    --color-background: #000000 ; 
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
 }
-
-body{
+body[data-themeColor="light"]{
+    --color-gold: #bb57b3;
+    --font-bold: 600;
+    --color-text: #000000; 
+    --color-background: #ffffff ; 
     background-color: var(--color-background);
     color: var(--color-text);
     margin: 0;
@@ -181,7 +187,42 @@ max-width: 800px;
     color: black;
 }
 
-.dark-theme{
+button[data-themeColor="dark"]{
+    position: relative;
+    background-color: transparent;
+    background-image: url(./assets/images/dark.svg);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    border: 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button[data-themeColor="dark"]:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+
+button[data-themeColor="light"]{
+    position: relative;
+    background-color: transparent;
+    background-image: url(./assets/images/light.svg);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    border: 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+    filter: invert(100%);
+}
+button[data-themeColor="light"]:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+
+/* .dark-theme{
     position: relative;
     background-color: transparent;
     background-image: url(./assets/images/dark.svg);
@@ -196,9 +237,9 @@ max-width: 800px;
   .dark-theme:hover{
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
-  }
+  } */
   
-  .light-theme{
+/*   .light-theme{
     position: relative;
     background-color: transparent;
     background-image: url(./assets/images/light.svg);
@@ -209,13 +250,12 @@ max-width: 800px;
     box-sizing: border-box;
     transition: 0.5s;
     cursor: pointer;
-
     filter: invert(100%);
   }
   .light-theme:hover{
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
-  }
+  } */
 
 /****************************************************** NAVIGATION ************************/
 
